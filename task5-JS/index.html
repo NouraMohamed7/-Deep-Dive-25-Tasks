@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+    </style>
+  </head>
+  <body>
+   
+    <form>
+         <div id="message"></div>
+      <h1>
+        Hi , Welcome to Luxira
+        <p>register your account</p>
+      </h1>
+
+    <section>
+        <div>
+            <label for="fname" >First Name</label>
+            <div class="input-container">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" placeholder="sassasas" id="fname" >
+            </div>
+
+            <label for="email">Mobile number or email address</label>
+            <div class="input-container">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="nn@gmail.come" id="email">
+            </div>
+
+            <label for="pass">password</label>
+            <div class="input-container">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="12234555" id="pass">
+            <i class="fa-solid fa-eye-slash"></i>
+            </div>
+        </div>
+        <div>
+            <label for="sname" >surname</label>
+            <div class="input-container">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" placeholder="sassasas" id="sname">
+            </div>
+            <label for="gender">gender</label>
+            <div class="input-container">
+            <i class="fa-regular fa-user"></i>
+            <select id="gender" value="option.value">
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+            </div>
+
+             <label id="conpass">coniform password</label>
+            <div class="input-container">
+            <i class="fa-solid fa-lock"></i>
+            <input type="email" placeholder="12234555" id="conpass">
+            <i class="fa-solid fa-eye"></i>
+            </div>
+
+
+        </div>
+
+</section>
+    
+
+
+      <button id="btn">register</button>
+      <hr><p class="log">or login with</p></hr>
+      <button><i class="fa-brands fa-google"></i>sign up with google</button>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
