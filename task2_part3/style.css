@@ -1,0 +1,54 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        "logo nav"
+        "contact sidebar"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    gap: 10px;
+    background-color: rgba(223, 225, 226, 0.295);
+}
+
+.logo {
+    grid-area: logo;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav {
+    grid-area: nav;
+    background: #bdc3c7be;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contact {
+    grid-area: contact;
+    background: #bdc3c7be;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: #bdc3c7be;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+footer {
+    grid-area: footer;
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
