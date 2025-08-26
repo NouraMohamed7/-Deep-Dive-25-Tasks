@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../imeges/logo.png" alt="logo" />
+      </div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Courses</a>
+        <a href="#">Careers</a>
+        <a href="#">Blog</a>
+      </nav>
+      <div class="regesteration">
+        <button><a href="#">Log in</a></button>
+        <button class="sign">Sign up</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <h2>Login</h2>
+      <div>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+        <form id="form" action="https://test-api-v1-vert.vercel.app/v1/login" method="post" target="_blank">
+          <label for="email">Email Address</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your Email Address"
+            required
+          />
+
+          <label for="name">User Name</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your User name"
+            required
+          />
+
+          <label for="pass">Password</label>
+          <div class="input-box">
+            <input
+              id="pass"
+              type="password"
+              placeholder="Enter your Password"
+              required
+              minlength="8"
+              title="Password must be 8-20 characters long"
+            />
+          </div>
+
+          <label for="c-pass">Confirm Password</label>
+          <div class="input-box">
+            <input
+              id="c-pass"
+              type="password"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+          <div id="message"></div>
+
+          <button type="submit">Register</button>
+        </form>
+      <div id="message"></div>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="logo-text">
+          <span class="logo-totc">TOTC</span>
+          <span class="virtual-class">Virtual Class<br />for Zoom</span>
+        </div>
+        <div class="footer-links">
+          <a href="#">Careers</a>
+          <span class="link-divider">|</span>
+          <a href="#">Privacy Policy</a>
+          <span class="link-divider">|</span>
+          <a href="#">Terms & Conditions</a>
+        </div>
+        <p class="copyright">© 2021 Class Technologies Inc.</p>
+      </div>
+    </footer>
+
+    <script src="./login.js"></script>
+  </body>
+</html>

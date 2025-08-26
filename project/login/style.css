@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor: #49BBBD;
+    --textColor: black;
+    --secColor: #cce1f8b7;
+    --footColor: #252641;
+    --textFont: "Poppins", sans-serif;
+    --footer-text-color: #aaa;
+}
+
+body {
+    font-family: var(--textFont);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainColor);
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.regesteration {
+    display: flex;
+    gap: 10px;
+}
+
+.regesteration button {
+    color: var(--mainColor);
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.regesteration button:hover {
+    background-color: var(--secColor);
+    color: white;
+    border: 1px solid white;
+}
+
+.regesteration button.sign {
+    background-color: var(--secColor);
+    color: white;
+    border: 1px solid white;
+}
+
+.regesteration button a {
+    text-decoration: none;
+    color: black;
+}
+
+.regesteration button.sign:hover {
+    background-color: white;
+    color: var(--mainColor);
+}
+
+/* Centering the form */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+form {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+form label {
+    margin: 15px 0 5px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+form input {
+    width: 435px;
+    height: 54px;
+    border-radius: 40px;
+    border: 1px solid #49BBBD;
+    color: #ACACAC;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0 25px;
+}
+
+.pass-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-box input {
+    width: 100%;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    color: #999;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    max-width: 454px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #5B5B5B;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button[type="submit"] {
+    width: 232px;
+    height: 49px;
+    border-radius: 36px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #49BBBD;
+    border: none;
+    margin: 30px auto;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+
+.main-footer {
+    background-color: var(--footColor);
+    color: var(--footer-text-color);
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: white;
+}
